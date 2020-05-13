@@ -33,6 +33,8 @@ int main(int argc, char *argv[])
         return 2;
     }
  
+	snprintf(url, URL_SIZE, URL_FORMAT, argv[1], argv[2]);
+ 
    //******
    
 }
