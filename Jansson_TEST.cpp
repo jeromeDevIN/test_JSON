@@ -14,3 +14,25 @@ static int newline_offset(const char *text)
     else
         return (int)(newline - text);
 }
+
+
+
+int main(int argc, char *argv[])
+{
+    size_t i;
+    char *text;
+    char url[URL_SIZE];
+
+    json_t *root;
+    json_error_t error;
+
+    if(argc != 3)
+    {
+        fprintf(stderr, "usage: %s USER REPOSITORY\n\n", argv[0]);
+        fprintf(stderr, "List commits at USER's REPOSITORY.\n\n");
+        return 2;
+    }
+ 
+   //******
+   
+}
